@@ -1,0 +1,65 @@
+/* Orders.css */
+
+/* Main container for all orders */
+.order-list {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Individual order item layout */
+.order-item {
+    /* Grid layout for items: Icon, Details, Items Count, Amount, Status */
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr 1fr 1fr; 
+    align-items: start;
+    gap: 30px;
+    
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #505050;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Parcel Icon size */
+.order-item img {
+    width: 50px;
+}
+
+/* Item names and quantities (first column in details) */
+.order-item-food {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Address and phone number styling */
+.order-item-address, .order-item-phone {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Status Dropdown styling */
+.order-item select {
+    background-color: #ffe8e8; /* Light red background */
+    border: 1px solid tomato;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 900px) {
+    .order-item {
+        /* Adjusting columns for smaller devices */
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+        gap: 15px;
+    }
+    .order-item img {
+        width: 40px;
+    }
+}
