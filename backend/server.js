@@ -14,11 +14,11 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv/config');
 const connectDB = require('./config/mongodb.js').default;
-const connectCloudinary = require('./config/cloudinary.js');
-const userRouter = require('./routes/userRoute.js');
-const productRouter = require('./routes/productRoute.js');
-const cartRouter = require('./routes/cartRoute.js');
-const orderRouter = require('./routes/orderRoute.js');
+const connectCloudinary = require('./config/cloudinary.js').default;
+const userRouter = require('./routes/userRoute.js').default;
+const productRouter = require('./routes/productRoute.js').default;
+const cartRouter = require('./routes/cartRoute.js').default;
+const orderRouter = require('./routes/orderRoute.js').default;
 
 
 
