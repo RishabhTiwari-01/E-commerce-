@@ -13,7 +13,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv/config');
-const connectDB = require('./config/mongodb.js');
+const connectDB = require('./config/mongodb.js').default;
 const connectCloudinary = require('./config/cloudinary.js');
 const userRouter = require('./routes/userRoute.js');
 const productRouter = require('./routes/productRoute.js');
@@ -25,9 +25,9 @@ const orderRouter = require('./routes/orderRoute.js');
 // App config
 
 const app = express();
-const port = process.env.Port || 4000
-connectDB()
-connectCloudinary()
+const port = process.env.Port || 4000;
+connectDB();
+connectCloudinary();
 
 // Midiileware
 
