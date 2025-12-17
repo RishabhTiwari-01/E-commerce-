@@ -130,7 +130,7 @@ return totalAmount;
 const getProductsData = async () => {
  try {
     // API Call via Vite Proxy
-    const response = await axios.get("/api/product/list"); 
+    const response = await axios.get(`${backendUrl}/api/product/list`); 
     
     // Data Check aur State Update
     if(response.data.success){
