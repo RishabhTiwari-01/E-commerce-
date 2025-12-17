@@ -41,8 +41,10 @@ const Login = ({setToken}) => {
                      border-gray-300 outline-none' type='password'
                       placeholder='Enter Your Password' required/>
                 </div>
-                <button className='mt-2 w-full py-2 px-4 rounded-md
-                 text-white bg-black' type='submit'>Login</button>
+                <button className='mt-2 w-full py-2 px-4 
+                rounded-md
+                 text-white bg-black' 
+                 type='submit'>Login</button> 
             </form>
         </div>
     </div>
